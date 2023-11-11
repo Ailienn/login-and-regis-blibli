@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.Logo{
+    font-family: Teko;
+    font-size: 30px;
+    font-weight: 400px;
+    letter-spacing: 9.275px;
+    align-items: center;
+    display: flex;
+}
+.Logo a, .nav-right{
+    align-items: center;
+    display: flex;
+}
+.Logo a svg{
+    margin-top: -5px;
+    margin-right: 7px;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4em;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+nav ul li:hover{
+    font-weight: 500;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    font-family: Inter;
+}
+.dropdown ul{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    list-style: none;
+    margin-left: -36px;
+    padding-right: 36px;
+    border-radius: 1px;
+    z-index: 1;
+}
+.dropdown:hover ul{
+    display: block;
+    z-index: 1;
+}
+.dropdown:active ul{
+    visibility: visible;
+    display: block;
+    transform: scale(1) translateX(5px);
+}
+.dropdown a svg{
+    margin-left: 8px;
+}
+form{
+    position: relative;
+    margin-left: 40px;
+}
+form i{
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    left: 10px;
+}
+form input{
+    border-radius: 38px;
+    background: linear-gradient(275deg, #B896FF -18.36%, #D6C3FE 29.5%, #DCA5E9 106.85%);
+    backdrop-filter: blur(12px);
+    border: none;
+    width: 150px;
+    height: 30px;
+    padding: 8px 10px 8px 50px;
+    max-width: 188px;
+    color: white;
+}
+form input::placeholder{
+    color: white;
+}
+#home{
+    border-radius: 30px;
+    background: linear-gradient(275deg, #B896FF -18.36%, #b5e7e7 29.5%, #DCA5E9 106.85%);
+    backdrop-filter: blur(12px);    
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 30px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.bungkus{
+    position: relative;
+}
+.item-left{
+    width: 50%;
+    margin-bottom: 60px;
+    margin-left: 43px;
+    margin-top: 30px;
+}
+.item-title p:nth-child(1){
+    color: black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 63px;
+}
+.item-title p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 216px;
+}
+.item-title p span{
+    font-weight: 700;
+}
+.item-left a{
+    border-radius: 21px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(26.574073791503906px);
+    padding: 28px 36px;
+}
+.item-left a span{
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #D96BFF -15.36%, #FF96E2 105.12%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.item-right{
+    position: absolute;
+    width: 50%;
+    right: -8px;
+    top: 0;
+}
+.item-right img{
+    width: 100%;
+    right: 0;
+}
